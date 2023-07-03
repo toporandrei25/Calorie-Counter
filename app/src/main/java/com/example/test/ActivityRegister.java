@@ -29,6 +29,18 @@ public class ActivityRegister extends AppCompatActivity {
     private ProgressBar progressBar;
 
     @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null){
+            Intent intent = new Intent(getApplicationContext(), Conected.class);
+            startActivity(intent);
+            finish();
+        }
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
@@ -50,14 +62,17 @@ public class ActivityRegister extends AppCompatActivity {
 
                 if(TextUtils.isEmpty(email) && TextUtils.isEmpty(password)){
                     Toast.makeText(ActivityRegister.this,"Enter Email & Password",Toast.LENGTH_SHORT).show();
+               return;
                 }
 
 
                 if(TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)){
                     Toast.makeText(ActivityRegister.this,"Enter Email",Toast.LENGTH_SHORT).show();
+               return;
                 }
                 if(TextUtils.isEmpty(password) && !TextUtils.isEmpty(email)){
                     Toast.makeText(ActivityRegister.this,"Enter Password",Toast.LENGTH_SHORT).show();
+                return;
                 }
 
                 mAuth.createUserWithEmailAndPassword(email, password)
@@ -72,7 +87,7 @@ public class ActivityRegister extends AppCompatActivity {
 
                                 } else {
                                     // If sign in fails, display a message to the user.
-                                    Toast.makeText(ActivityRegister.this, "Authentication failed.",
+                                    Toast.makeText(ActivityRegister.this, "Register failed.",
                                             Toast.LENGTH_SHORT).show();
 
                                 }
