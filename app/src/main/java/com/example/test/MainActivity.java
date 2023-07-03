@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
         buttonREG = (Button) findViewById(R.id.btnreg);
         buttonREG.setOnClickListener(new View.OnClickListener()
-                                  {@Override
-                                  public void onClick(View v){
-                            openActivity3();}});
+        {@Override
+        public void onClick(View v){
+            openActivity3();}});
 
         buttonLOG = (Button) findViewById(R.id.btnlogin);
         buttonLOG.setOnClickListener(new View.OnClickListener()

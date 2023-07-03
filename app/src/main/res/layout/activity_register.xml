@@ -4,27 +4,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DEE5E5"
     tools:context=".ActivityRegister">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="86dp"
-        android:layout_height="56dp"
-        android:text="REGISTER"
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:hint="Username"
+        android:textColorHint="#DEE5E5"
+        app:boxBackgroundColor="#25AE8D"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="@color/black"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:hintTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.319">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:hint="Password"
+        android:textColorHint="#DEE5E5"
+        app:boxBackgroundColor="#25AE8D"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="@color/black"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:hintTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textPass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            tools:ignore="DuplicateIds" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/butbck"
         android:layout_width="108dp"
-        android:layout_height="43dp"
+        android:layout_height="48dp"
+        android:textColor="@color/white"
         android:text="Back"
+        app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="248dp"
+        android:layout_height="66dp"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+
+        android:backgroundTint="#A40967BA"
+        android:textColor="@color/white"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="visible"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.742"
+        tools:visibility="visible" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
