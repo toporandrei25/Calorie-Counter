@@ -14,12 +14,11 @@
 
         android:layout_width="250dp"
         android:layout_height="70dp"
-        android:hint="Username"
+        android:hint="Email@example.com"
         android:textColorHint="#DEE5E5"
         app:boxBackgroundColor="#25AE8D"
         app:boxBackgroundMode="filled"
         app:boxStrokeColor="@color/black"
-
         app:counterEnabled="true"
         app:counterMaxLength="20"
         app:hintAnimationEnabled="true"
@@ -31,7 +30,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.319">
+        app:layout_constraintVertical_bias="0.3">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textEmail"
@@ -61,6 +60,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -71,6 +71,10 @@
             tools:ignore="DuplicateIds" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
 
     <Button
         android:id="@+id/butbck"
@@ -86,6 +90,74 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:hint="Greutate"
+        android:textColorHint="#DEE5E5"
+        app:boxBackgroundColor="#25AE8D"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="@color/black"
+        app:suffixText="@string/KG"
+        app:suffixTextColor="@color/white"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:hintTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textGreutate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:hint="Inaltime"
+        android:textColorHint="#DEE5E5"
+        app:boxBackgroundColor="#25AE8D"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="@color/black"
+        app:suffixText="@string/CM"
+        app:suffixTextColor="@color/white"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:hintTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInaltime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="248dp"
@@ -94,10 +166,10 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177" />
+        app:layout_constraintVertical_bias="0.15" />
 
     <Button
         android:id="@+id/btnsend"
@@ -116,7 +188,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.742"
+        app:layout_constraintVertical_bias="0.9"
         tools:visibility="visible" />
 
 

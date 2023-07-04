@@ -9,12 +9,29 @@
     tools:context=".Conected">
 
     <TextView
-        android:id="@+id/user_details"
+        android:id="@+id/user_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hello"
+        android:text="email"
         />
-
+    <TextView
+        android:id="@+id/user_greutate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="greutate"
+        />
+    <TextView
+        android:id="@+id/user_inaltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="inaltime"
+        />
+    <TextView
+        android:id="@+id/user_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="password"
+        />
     <Button
         android:id="@+id/logout"
         android:text="LOGOUT"
