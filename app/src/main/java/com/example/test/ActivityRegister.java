@@ -78,17 +78,23 @@ public class ActivityRegister extends AppCompatActivity {
 
                 if(TextUtils.isEmpty(email) && TextUtils.isEmpty(password)){
                     Toast.makeText(ActivityRegister.this,"Enter Email & Password",Toast.LENGTH_SHORT).show();
+                    progressBar.setVisibility(view.GONE);
                return;
                 }
 
 
                 if(TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)){
                     Toast.makeText(ActivityRegister.this,"Enter Email",Toast.LENGTH_SHORT).show();
+                    progressBar.setVisibility(view.GONE);
                return;
                 }
                 if(TextUtils.isEmpty(password) && !TextUtils.isEmpty(email)){
                     Toast.makeText(ActivityRegister.this,"Enter Password",Toast.LENGTH_SHORT).show();
+                    progressBar.setVisibility(view.GONE);
                 return;
+
+
+
                 }
 
                 mAuth.createUserWithEmailAndPassword(email, password)
@@ -96,6 +102,8 @@ public class ActivityRegister extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 progressBar.setVisibility(view.GONE);
+
+
                                 if (task.isSuccessful()) {
                                     // Sign in success, update UI with the signed-in user's information
                                     Toast.makeText(ActivityRegister.this, "Acount created.",
@@ -111,7 +119,9 @@ public class ActivityRegister extends AppCompatActivity {
                                             .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                                 @Override
                                                 public void onSuccess(DocumentReference documentReference) {
-                                                    Toast.makeText(getApplicationContext(),"Success",Toast.LENGTH_LONG).show();
+                                                    //Toast.makeText(getApplicationContext(),"Success",Toast.LENGTH_LONG).show();
+                                                    Intent intent = new Intent(getApplicationContext(), ActivitySetAge.class);
+                                                    startActivity(intent);
                                                 }
                                             })
                                             .addOnFailureListener(new OnFailureListener() {

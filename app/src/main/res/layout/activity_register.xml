@@ -44,7 +44,7 @@
 
         android:layout_width="250dp"
         android:layout_height="70dp"
-        android:hint="Password"
+        android:hint="Password   Min. 6 Char."
         android:textColorHint="#DEE5E5"
         app:boxBackgroundColor="#25AE8D"
         app:boxBackgroundMode="filled"
@@ -83,6 +83,7 @@
         android:textColor="@color/white"
         android:text="Back"
         app:cornerRadius="5dp"
+        android:backgroundTint="#003A6E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TEST</string>
+    <string name="app_name">Calorie Calculator</string>
     <string name="CM">CM</string>
     <string name="KG">KG</string>
 </resources>

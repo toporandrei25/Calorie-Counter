@@ -8,22 +8,27 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TEST"
         tools:targetApi="31">
-
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitySetAge"
+            android:exported="false" />
         <activity
             android:name=".ActivityLogin"
             android:exported="false" />
         <activity
             android:name=".ActivityRegister"
             android:exported="false" />
-        <activity android:name=".MainActivity"
-            android:exported="true"
-            />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
         <activity
             android:name=".Conected"
             android:exported="true">
