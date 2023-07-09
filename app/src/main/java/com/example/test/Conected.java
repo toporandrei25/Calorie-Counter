@@ -116,10 +116,10 @@ public class Conected extends AppCompatActivity {
                                 int greu = Integer.parseInt(greutate);
                                  int varsta = Integer.parseInt(age);
                                     int calUsed=500;
-                                    int fatUsed = 50;
+                                    int fatUsed = 20;
                                     int carbUsed = 83;
                                     int protUsed = 30;
-                                 calorii = 66.5 + (13.8*greu) + (5*inalt) - (6.8*varsta);
+                                 calorii = 66.5 + (13.8*greu) + (6*inalt) - (6*varsta);
                                 textViewCalorii.setText(valueOf(calUsed)+"/"+valueOf((int)calorii));
                                 auxfat = (calorii*0.3);
                                 fat = auxfat/9;
