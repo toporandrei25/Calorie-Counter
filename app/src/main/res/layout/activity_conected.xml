@@ -312,17 +312,17 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:orientation="horizontal"
-               android:gravity="center">
+               >
 
                <TextView
                    android:layout_width="wrap_content"
                    android:layout_height="match_parent"
                    android:gravity="center"
-                   android:text="Alimentul 1"
-                   android:textAlignment="center"
+                   android:text=" Fulgi de ovaz: 100g Calorii: 240\n Carbs: 54g  Prot: 17g  Fat: 6g"
+                   android:textAlignment="textStart"
                    android:textColor="@color/black"
-                   android:textSize="18sp"
-                   />
+                   android:layout_marginLeft="10dp"
+                   android:textSize="17sp" />
 
                <Button
                    android:id="@+id/buttonAdd1"
@@ -330,7 +330,7 @@
                    android:layout_height="80dp"
                    android:text="Add"
                    android:textColor="@color/white"
-                   android:layout_marginLeft="200dp"
+                   android:layout_marginLeft="50dp"
                    />
 
            </LinearLayout>
@@ -338,16 +338,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center">
+                >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="Alimentul 2"
-                    android:textAlignment="center"
+                    android:text=" Măr: ~150g  Calorii: 95 \n Carbs: 25g  Prot: 5g  Fat: 1g"
+                    android:textAlignment="textStart"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
                     />
 
                 <Button
@@ -356,7 +357,7 @@
                     android:layout_height="80dp"
                     android:text="Add"
                     android:textColor="@color/white"
-                    android:layout_marginLeft="200dp"
+                    android:layout_marginLeft="77dp"
                     />
 
             </LinearLayout>
@@ -364,17 +365,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="Alimentul 3"
-                    android:textAlignment="center"
+                    android:text=" Banana: ~100g  Calorii: 105 \n Carbs: 27g  Prot: 3g  Fat: 1g"
+                    android:textAlignment="textStart"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
                     />
 
                 <Button
@@ -383,7 +384,7 @@
                     android:layout_height="80dp"
                     android:text="Add"
                     android:textColor="@color/white"
-                    android:layout_marginLeft="200dp"
+                    android:layout_marginLeft="72dp"
                     />
 
             </LinearLayout>
@@ -391,45 +392,43 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
                     android:gravity="center"
-                    android:text="Alimentul 4"
-                    android:textAlignment="center"
+                    android:text=" Piept de pui: 100g  Calorii: 110 \n Carbs: 1g  Prot: 22g  Fat: 1g"
+                    android:textAlignment="textStart"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
-                    />
+                    android:textSize="17sp" />
+
 
                 <Button
                     android:id="@+id/buttonAdd4"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
+                    android:layout_marginLeft="51dp"
                     android:text="Add"
-                    android:textColor="@color/white"
-                    android:layout_marginLeft="200dp"
-                    />
+                    android:textColor="@color/white" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
                     android:gravity="center"
-                    android:text="Alimentul 5"
-                    android:textAlignment="center"
+                    android:text=" Cartofi la cuptor: 100g Calorii: 130 \n Carbs: 34g  Prot: 5g  Fat: 1g"
+                    android:textAlignment="textStart"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
-                    />
+                    android:textSize="17sp" />
 
                 <Button
                     android:id="@+id/buttonAdd5"
@@ -437,7 +436,7 @@
                     android:layout_height="80dp"
                     android:text="Add"
                     android:textColor="@color/white"
-                    android:layout_marginLeft="200dp"
+                    android:layout_marginLeft="19dp"
                     />
 
             </LinearLayout>
@@ -446,16 +445,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center">
+               >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="Alimentul 6"
-                    android:textAlignment="center"
+                    android:text=" Paste: 100g  Calorii: 130 \n Carbs: 25g  Prot: 5g  Fat: 1g"
+                    android:textAlignment="textStart"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
                     />
 
                 <Button
@@ -464,7 +464,7 @@
                     android:layout_height="80dp"
                     android:text="Add"
                     android:textColor="@color/white"
-                    android:layout_marginLeft="200dp"
+                    android:layout_marginLeft="77dp"
                     />
 
             </LinearLayout>
@@ -474,16 +474,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center">
+                >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="Alimentul 7"
-                    android:textAlignment="center"
+                    android:text=" Masline negre: 100g  Calorii: 130 \n Carbs: 7g  Prot: 2g  Fat: 20g"
+                    android:textAlignment="textStart"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
                     />
 
                 <Button
@@ -492,7 +493,7 @@
                     android:layout_height="80dp"
                     android:text="Add"
                     android:textColor="@color/white"
-                    android:layout_marginLeft="200dp"
+                    android:layout_marginLeft="34dp"
                     />
 
 
@@ -501,16 +502,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center">
+               >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="Alimentul 8"
-                    android:textAlignment="center"
+                    android:text=" Peste: 100g  Calorii: 170 \n Carbs: 1g  Prot: 20g  Fat: 10g"
+                    android:textAlignment="textStart"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
                     />
 
                 <Button
@@ -519,7 +521,7 @@
                     android:layout_height="80dp"
                     android:text="Add"
                     android:textColor="@color/white"
-                    android:layout_marginLeft="200dp"
+                    android:layout_marginLeft="67dp"
                     />
 
             </LinearLayout>
@@ -529,16 +531,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center">
+                >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="Alimentul 9"
-                    android:textAlignment="center"
+                    android:text=" Orez: 100g  Calorii: 135 \n Carbs: 28g  Prot: 2g  Fat: 1g"
+                    android:textAlignment="textStart"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
                     />
 
                 <Button
@@ -547,7 +550,7 @@
                     android:layout_height="80dp"
                     android:text="Add"
                     android:textColor="@color/white"
-                    android:layout_marginLeft="200dp"
+                    android:layout_marginLeft="77dp"
                     />
 
             </LinearLayout>
@@ -556,16 +559,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center">
+                >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="Alimentul 10"
-                    android:textAlignment="center"
+                    android:text=" Paine alba: 100g  Calorii: 250 \n Carbs: 60g  Prot: 10g  Fat: 4g"
+                    android:textAlignment="textStart"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
                     />
 
                 <Button
@@ -574,11 +578,93 @@
                     android:layout_height="80dp"
                     android:text="Add"
                     android:textColor="@color/white"
-                    android:layout_marginLeft="200dp"
+                    android:layout_marginLeft="61dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=" Lapte 3.5%: 100g  Calorii: 65 \n Carbs: 5g  Prot: 3g  Fat: 3g"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/buttonAdd11"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="68dp"
                     />
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=" Unt de arahide: 100g  Calorii: 600 \n Carbs: 25g  Prot: 30g  Fat: 50g"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/buttonAdd12"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="31dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=" Brocoli: 100g  Calorii: 35 \n Carbs: 8g  Prot: 3g  Fat: 1g"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/buttonAdd13"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="86dp"
+                    />
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

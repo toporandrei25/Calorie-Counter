@@ -108,7 +108,7 @@ public class ActivityRegister extends AppCompatActivity {
                                     // Sign in success, update UI with the signed-in user's information
                                     Toast.makeText(ActivityRegister.this, "Acount created.",
                                             Toast.LENGTH_SHORT).show();
-                                    int i = 0;
+                                    String i = String.valueOf(0);
                                     Map<String,Object> user = new HashMap<>();
                                     user.put("Email", email);
                                     user.put("Password", password);

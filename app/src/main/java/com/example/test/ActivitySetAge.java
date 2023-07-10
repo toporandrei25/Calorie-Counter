@@ -101,7 +101,7 @@ public class ActivitySetAge extends AppCompatActivity {
                                     public void onClick(View view) {
                                         String age;
                                         age = String.valueOf(editTextAge.getText());
-
+                                       String alim1, alim2,alim3,alim4,alim5,alim6,alim7,alim8,alim9,alim10,alim11,alim12,alim13;
 
 
                                         if(TextUtils.isEmpty(age)){
@@ -110,7 +110,19 @@ public class ActivitySetAge extends AppCompatActivity {
                                         }
                                         else{     Map<String,Object> user = new HashMap<>();
                                             user.put("Age", age);
-
+                                            user.put("alim1","0");
+                                            user.put("alim2","0");
+                                            user.put("alim3","0");
+                                            user.put("alim4","0");
+                                            user.put("alim5","0");
+                                            user.put("alim6","0");
+                                            user.put("alim7","0");
+                                            user.put("alim8","0");
+                                            user.put("alim9","0");
+                                            user.put("alim10","0");
+                                            user.put("alim11","0");
+                                            user.put("alim12","0");
+                                            user.put("alim13","0");
 
                                             firestore.collection("Users").document(userId)
                                                     .set(user, SetOptions.merge());
