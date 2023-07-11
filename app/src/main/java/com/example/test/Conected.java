@@ -143,6 +143,33 @@ public class Conected extends AppCompatActivity {
                                  textViewPassword.setText(password);
                                  textViewInaltime.setText(inaltime);
                                  textViewGreutate.setText(greutate);
+                                 x1 = document.getString("alim1");
+                                 x2 = document.getString("alim2");
+                                 x3 = document.getString("alim3");
+                                x4 = document.getString("alim4");
+                                x5 = document.getString("alim5");
+                                x6 = document.getString("alim6");
+                                x7 = document.getString("alim7");
+                                x8 = document.getString("alim8");
+                                x9 = document.getString("alim9");
+                                x10 = document.getString("alim10");
+                                x11 = document.getString("alim11");
+                                x12 = document.getString("alim12");
+                                x13 = document.getString("alim13");
+
+                                alim1 = Integer.parseInt(x1);
+                                alim2 = Integer.parseInt(x2);
+                                alim3 = Integer.parseInt(x3);
+                                alim4 = Integer.parseInt(x4);
+                                alim5 = Integer.parseInt(x5);
+                                alim6 = Integer.parseInt(x6);
+                                alim7 = Integer.parseInt(x7);
+                                alim8 = Integer.parseInt(x8);
+                                alim9 = Integer.parseInt(x9);
+                                alim10 = Integer.parseInt(x10);
+                                alim11 = Integer.parseInt(x11);
+                                alim12 = Integer.parseInt(x12);
+                                alim13 = Integer.parseInt(x13);
 
                                     i = Integer.parseInt(auxiliar);
                                 int inalt = Integer.parseInt(inaltime);
@@ -173,6 +200,219 @@ public class Conected extends AppCompatActivity {
                                 progressFat.setMin(0);
                                 progressFat.setMax((int)fat);
                                 progressFat.setProgress(fatUsed);
+
+                                if(alim1 > 0)
+                                {   calUsed = calUsed + 240 * alim1;
+                                    carbUsed = carbUsed + 54 * alim1;
+                                    protUsed = protUsed + 17 * alim1;
+                                    fatUsed = fatUsed + 6 * alim1;
+
+                                    progressCalorii.setProgress(calUsed);
+                                    progressCarbs.setProgress(carbUsed);
+                                    progressProt.setProgress(protUsed);
+                                    progressFat.setProgress(fatUsed);
+
+                                    textViewCalorii.setText(valueOf(calUsed)+"/"+valueOf((int)calorii));
+                                    textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
+                                    textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
+                                    textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");
+
+                                }
+                                if(alim2 > 0) {
+                                    calUsed = calUsed + 95 * alim2;
+                                    carbUsed = carbUsed + 25 * alim2;
+                                    protUsed = protUsed + 5 * alim2;
+                                    fatUsed = fatUsed + 1 * alim2;
+
+                                    progressCalorii.setProgress(calUsed);
+                                    progressCarbs.setProgress(carbUsed);
+                                    progressProt.setProgress(protUsed);
+                                    progressFat.setProgress(fatUsed);
+
+                                    textViewCalorii.setText(valueOf(calUsed)+"/"+valueOf((int)calorii));
+                                    textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
+                                    textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
+                                    textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");}
+
+                                if(alim3 > 0){
+                                    calUsed = calUsed + 105 * alim3;
+                                    carbUsed = carbUsed + 27 * alim3;
+                                    protUsed = protUsed + 3 * alim3;
+                                    fatUsed = fatUsed + 1 * alim3;
+
+                                    progressCalorii.setProgress(calUsed);
+                                    progressCarbs.setProgress(carbUsed);
+                                    progressProt.setProgress(protUsed);
+                                    progressFat.setProgress(fatUsed);
+
+                                    textViewCalorii.setText(valueOf(calUsed)+"/"+valueOf((int)calorii));
+                                    textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
+                                    textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
+                                    textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");}
+
+                                if(alim4 > 0){
+                                    calUsed = calUsed + 110 * alim4;
+                                    carbUsed = carbUsed + 1 * alim4;
+                                    protUsed = protUsed + 22 * alim4;
+                                    fatUsed = fatUsed + 1 * alim4;
+
+                                    progressCalorii.setProgress(calUsed);
+                                    progressCarbs.setProgress(carbUsed);
+                                    progressProt.setProgress(protUsed);
+                                    progressFat.setProgress(fatUsed);
+
+                                    textViewCalorii.setText(valueOf(calUsed)+"/"+valueOf((int)calorii));
+                                    textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
+                                    textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
+                                    textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");}
+
+                                if(alim5 > 0){
+                                    calUsed = calUsed + 130 * alim5;
+                                    carbUsed = carbUsed + 34 * alim5;
+                                    protUsed = protUsed + 5 * alim5;
+                                    fatUsed = fatUsed + 1 * alim5;
+
+                                    progressCalorii.setProgress(calUsed);
+                                    progressCarbs.setProgress(carbUsed);
+                                    progressProt.setProgress(protUsed);
+                                    progressFat.setProgress(fatUsed);
+
+                                    textViewCalorii.setText(valueOf(calUsed)+"/"+valueOf((int)calorii));
+                                    textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
+                                    textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
+                                    textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");
+                                }
+
+                                if(alim6 > 0){
+                                    calUsed = calUsed + 130 * alim6;
+                                    carbUsed = carbUsed + 25 * alim6;
+                                    protUsed = protUsed + 5 * alim6;
+                                    fatUsed = fatUsed + 1 * alim6;
+
+                                    progressCalorii.setProgress(calUsed);
+                                    progressCarbs.setProgress(carbUsed);
+                                    progressProt.setProgress(protUsed);
+                                    progressFat.setProgress(fatUsed);
+
+                                    textViewCalorii.setText(valueOf(calUsed)+"/"+valueOf((int)calorii));
+                                    textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
+                                    textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
+                                    textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");}
+
+                                if(alim7 > 0){
+                                    calUsed = calUsed + 130 * alim7;
+                                    carbUsed = carbUsed + 7 * alim7;
+                                    protUsed = protUsed + 2 * alim7;
+                                    fatUsed = fatUsed + 20 * alim7;
+
+                                    progressCalorii.setProgress(calUsed);
+                                    progressCarbs.setProgress(carbUsed);
+                                    progressProt.setProgress(protUsed);
+                                    progressFat.setProgress(fatUsed);
+
+                                    textViewCalorii.setText(valueOf(calUsed)+"/"+valueOf((int)calorii));
+                                    textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
+                                    textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
+                                    textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");}
+
+                                if(alim8 > 0){
+                                    calUsed = calUsed + 170 * alim8;
+                                    carbUsed = carbUsed + 1 * alim8;
+                                    protUsed = protUsed + 20 * alim8;
+                                    fatUsed = fatUsed + 10 * alim8;
+
+                                    progressCalorii.setProgress(calUsed);
+                                    progressCarbs.setProgress(carbUsed);
+                                    progressProt.setProgress(protUsed);
+                                    progressFat.setProgress(fatUsed);
+
+                                    textViewCalorii.setText(valueOf(calUsed)+"/"+valueOf((int)calorii));
+                                    textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
+                                    textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
+                                    textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");}
+
+                                if(alim9 > 0){
+                                    calUsed = calUsed + 135 * alim9;
+                                    carbUsed = carbUsed + 28 * alim9;
+                                    protUsed = protUsed + 2 * alim9;
+                                    fatUsed = fatUsed + 1 * alim9;
+
+                                    progressCalorii.setProgress(calUsed);
+                                    progressCarbs.setProgress(carbUsed);
+                                    progressProt.setProgress(protUsed);
+                                    progressFat.setProgress(fatUsed);
+
+                                    textViewCalorii.setText(valueOf(calUsed)+"/"+valueOf((int)calorii));
+                                    textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
+                                    textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
+                                    textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");}
+
+                                if(alim10 > 0){
+                                    calUsed = calUsed + 250 * alim10;
+                                    carbUsed = carbUsed + 60 * alim10;
+                                    protUsed = protUsed + 10 * alim10;
+                                    fatUsed = fatUsed + 4 * alim10;
+
+                                    progressCalorii.setProgress(calUsed);
+                                    progressCarbs.setProgress(carbUsed);
+                                    progressProt.setProgress(protUsed);
+                                    progressFat.setProgress(fatUsed);
+
+                                    textViewCalorii.setText(valueOf(calUsed)+"/"+valueOf((int)calorii));
+                                    textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
+                                    textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
+                                    textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");}
+
+                                if(alim11 > 0){
+                                    calUsed = calUsed + 65 * alim11;
+                                    carbUsed = carbUsed + 5 * alim11;
+                                    protUsed = protUsed + 3 * alim11;
+                                    fatUsed = fatUsed + 3 * alim11;
+
+                                    progressCalorii.setProgress(calUsed);
+                                    progressCarbs.setProgress(carbUsed);
+                                    progressProt.setProgress(protUsed);
+                                    progressFat.setProgress(fatUsed);
+
+                                    textViewCalorii.setText(valueOf(calUsed)+"/"+valueOf((int)calorii));
+                                    textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
+                                    textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
+                                    textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");}
+
+                                if(alim12 > 0){
+                                    calUsed = calUsed + 600 * alim12;
+                                    carbUsed = carbUsed + 25 * alim12;
+                                    protUsed = protUsed + 30 * alim12;
+                                    fatUsed = fatUsed + 50 * alim12;
+
+                                    progressCalorii.setProgress(calUsed);
+                                    progressCarbs.setProgress(carbUsed);
+                                    progressProt.setProgress(protUsed);
+                                    progressFat.setProgress(fatUsed);
+
+                                    textViewCalorii.setText(valueOf(calUsed)+"/"+valueOf((int)calorii));
+                                    textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
+                                    textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
+                                    textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");}
+
+                                if(alim13 > 0){
+                                    calUsed = calUsed + 35 * alim13;
+                                    carbUsed = carbUsed + 8 * alim13;
+                                    protUsed = protUsed + 3 * alim13;
+                                    fatUsed = fatUsed + 1 * alim13;
+
+                                    progressCalorii.setProgress(calUsed);
+                                    progressCarbs.setProgress(carbUsed);
+                                    progressProt.setProgress(protUsed);
+                                    progressFat.setProgress(fatUsed);
+
+                                    textViewCalorii.setText(valueOf(calUsed)+"/"+valueOf((int)calorii));
+                                    textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
+                                    textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
+                                    textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");}
+
+
+
 
                                 Log.d(TAG, document.getId() + " => " + document.getData());
                             }
@@ -223,7 +463,7 @@ public class Conected extends AppCompatActivity {
                 carbUsed = carbUsed + 25;
                 protUsed = protUsed + 5;
                 fatUsed = fatUsed + 1;
-                i++;
+
                 progressCalorii.setProgress(calUsed);
                 progressCarbs.setProgress(carbUsed);
                 progressProt.setProgress(protUsed);
@@ -233,7 +473,7 @@ public class Conected extends AppCompatActivity {
                 textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
                 textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
                 textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");
-                alim2++;
+                alim2++; i++;
                 x2 = String.valueOf(alim2);
                 y2 = String.valueOf(i);
 
@@ -252,7 +492,7 @@ public class Conected extends AppCompatActivity {
                 carbUsed = carbUsed + 27;
                 protUsed = protUsed + 3;
                 fatUsed = fatUsed + 1;
-                i++;
+
                 progressCalorii.setProgress(calUsed);
                 progressCarbs.setProgress(carbUsed);
                 progressProt.setProgress(protUsed);
@@ -262,7 +502,7 @@ public class Conected extends AppCompatActivity {
                 textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
                 textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
                 textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");
-                alim3++;
+                alim3++; i++;
                 x3 = String.valueOf(alim3);
                 y3 = String.valueOf(i);
                 firestore.collection("Users").document(userId1)
@@ -279,7 +519,7 @@ public class Conected extends AppCompatActivity {
                 carbUsed = carbUsed + 1;
                 protUsed = protUsed + 22;
                 fatUsed = fatUsed + 1;
-                i++;
+
                 progressCalorii.setProgress(calUsed);
                 progressCarbs.setProgress(carbUsed);
                 progressProt.setProgress(protUsed);
@@ -289,7 +529,7 @@ public class Conected extends AppCompatActivity {
                 textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
                 textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
                 textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");
-                alim4++;
+                alim4++;  i++;
                 x4 = String.valueOf(alim4);
                 y4 = String.valueOf(i);
 
@@ -308,7 +548,7 @@ public class Conected extends AppCompatActivity {
                 carbUsed = carbUsed + 34;
                 protUsed = protUsed + 5;
                 fatUsed = fatUsed + 1;
-                i++;
+
                 progressCalorii.setProgress(calUsed);
                 progressCarbs.setProgress(carbUsed);
                 progressProt.setProgress(protUsed);
@@ -318,7 +558,7 @@ public class Conected extends AppCompatActivity {
                 textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
                 textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
                 textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");
-                alim5++;
+                alim5++; i++;
                 x5 = String.valueOf(alim5);
                 y5 = String.valueOf(i);
 
@@ -336,7 +576,7 @@ public class Conected extends AppCompatActivity {
                 carbUsed = carbUsed + 25;
                 protUsed = protUsed + 5;
                 fatUsed = fatUsed + 1;
-                i++;
+
                 progressCalorii.setProgress(calUsed);
                 progressCarbs.setProgress(carbUsed);
                 progressProt.setProgress(protUsed);
@@ -346,7 +586,7 @@ public class Conected extends AppCompatActivity {
                 textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
                 textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
                 textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");
-                alim6++;
+                alim6++; i++;
                 x6 = String.valueOf(alim6);
                 y6 = String.valueOf(i);
 
@@ -365,7 +605,7 @@ public class Conected extends AppCompatActivity {
                 carbUsed = carbUsed + 7;
                 protUsed = protUsed + 2;
                 fatUsed = fatUsed + 20;
-                i++;
+
                 progressCalorii.setProgress(calUsed);
                 progressCarbs.setProgress(carbUsed);
                 progressProt.setProgress(protUsed);
@@ -375,7 +615,7 @@ public class Conected extends AppCompatActivity {
                 textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
                 textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
                 textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");
-                alim7++;
+                alim7++; i++;
                 x7 = String.valueOf(alim7);
                 y7 = String.valueOf(i);
 
@@ -394,7 +634,7 @@ public class Conected extends AppCompatActivity {
                 carbUsed = carbUsed + 1;
                 protUsed = protUsed + 20;
                 fatUsed = fatUsed + 10;
-                i++;
+
                 progressCalorii.setProgress(calUsed);
                 progressCarbs.setProgress(carbUsed);
                 progressProt.setProgress(protUsed);
@@ -404,7 +644,7 @@ public class Conected extends AppCompatActivity {
                 textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
                 textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
                 textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");
-                alim8++;
+                alim8++;  i++;
                 x8 = String.valueOf(alim8);
                 y8 = String.valueOf(i);
 
@@ -423,7 +663,7 @@ public class Conected extends AppCompatActivity {
                 carbUsed = carbUsed + 28;
                 protUsed = protUsed + 2;
                 fatUsed = fatUsed + 1;
-                i++;
+
                 progressCalorii.setProgress(calUsed);
                 progressCarbs.setProgress(carbUsed);
                 progressProt.setProgress(protUsed);
@@ -433,7 +673,7 @@ public class Conected extends AppCompatActivity {
                 textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
                 textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
                 textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");
-                alim9++;
+                alim9++; i++;
                 x9 = String.valueOf(alim9);
                 y9 = String.valueOf(i);
 
@@ -452,7 +692,7 @@ public class Conected extends AppCompatActivity {
                 carbUsed = carbUsed + 60;
                 protUsed = protUsed + 10;
                 fatUsed = fatUsed + 4;
-                i++;
+
                 progressCalorii.setProgress(calUsed);
                 progressCarbs.setProgress(carbUsed);
                 progressProt.setProgress(protUsed);
@@ -462,7 +702,7 @@ public class Conected extends AppCompatActivity {
                 textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
                 textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
                 textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");
-                alim10++;
+                alim10++; i++;
                 x10 = String.valueOf(alim10);
                 y10 = String.valueOf(i);
 
@@ -482,7 +722,7 @@ public class Conected extends AppCompatActivity {
                 carbUsed = carbUsed + 5;
                 protUsed = protUsed + 3;
                 fatUsed = fatUsed + 3;
-                i++;
+
                 progressCalorii.setProgress(calUsed);
                 progressCarbs.setProgress(carbUsed);
                 progressProt.setProgress(protUsed);
@@ -492,7 +732,7 @@ public class Conected extends AppCompatActivity {
                 textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
                 textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
                 textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");
-                alim11++;
+                alim11++; i++;
                 x11 = String.valueOf(alim11);
                 y11 = String.valueOf(i);
 
@@ -512,7 +752,7 @@ public class Conected extends AppCompatActivity {
                 carbUsed = carbUsed + 25;
                 protUsed = protUsed + 30;
                 fatUsed = fatUsed + 50;
-                i++;
+
                 progressCalorii.setProgress(calUsed);
                 progressCarbs.setProgress(carbUsed);
                 progressProt.setProgress(protUsed);
@@ -522,7 +762,7 @@ public class Conected extends AppCompatActivity {
                 textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
                 textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
                 textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");
-                alim12++;
+                alim12++; i++;
                 x12 = String.valueOf(alim12);
                 y12 = String.valueOf(i);
 
@@ -540,7 +780,7 @@ public class Conected extends AppCompatActivity {
                 carbUsed = carbUsed + 8;
                 protUsed = protUsed + 3;
                 fatUsed = fatUsed + 1;
-                i++;
+
                 progressCalorii.setProgress(calUsed);
                 progressCarbs.setProgress(carbUsed);
                 progressProt.setProgress(protUsed);
@@ -550,7 +790,7 @@ public class Conected extends AppCompatActivity {
                 textViewFat.setText(valueOf(fatUsed)+"/"+valueOf((int)fat)+"g");
                 textViewProt.setText(valueOf(protUsed)+"/"+valueOf((int)prot)+"g");
                 textViewCarb.setText(valueOf(carbUsed)+"/"+valueOf((int)carb)+"g");
-                alim13++;
+                alim13++; i++;
                 x13 = String.valueOf(alim13);
                 y13 = String.valueOf(i);
 
